@@ -23,3 +23,9 @@ BEGIN
 END //
 
 DELIMITER ;
+
+-- To execute the stored procedure, use:
+
+-- CALL GetMediaSales('MPEG audio file');  -- For a specific media type
+-- CALL GetMediaSales('All');  -- To fetch data for all media types
+
