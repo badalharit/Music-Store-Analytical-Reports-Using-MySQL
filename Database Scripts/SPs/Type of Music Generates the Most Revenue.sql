@@ -14,4 +14,6 @@ END //
 
 DELIMITER ;
 
+-- To execute the stored procedure, use:
+
 -- CALL GetGenreRevenue();
