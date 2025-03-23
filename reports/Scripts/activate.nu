@@ -32,7 +32,7 @@ export-env {
       }
     }
 
-    let virtual_env = r#'C:\wamp64\www\Music-Store-Analytical-Reports-Using-MySQL\reports'#
+    let virtual_env = r#'C:\wamp64\www\music_store_analytics\reports'#
     let bin = r#'Scripts'#
 
     let is_windows = ($nu.os-info.family) == 'windows'

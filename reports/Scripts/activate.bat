@@ -5,7 +5,7 @@
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-@set "VIRTUAL_ENV=C:\wamp64\www\Music-Store-Analytical-Reports-Using-MySQL\reports"
+@set "VIRTUAL_ENV=C:\wamp64\www\music_store_analytics\reports"
 
 @set "VIRTUAL_ENV_PROMPT="
 @if NOT DEFINED VIRTUAL_ENV_PROMPT (
