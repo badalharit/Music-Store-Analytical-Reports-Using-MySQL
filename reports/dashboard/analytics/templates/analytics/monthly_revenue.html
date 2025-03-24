@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Monthly Revenue</title>
+</head>
+<body>
+    <h1>Monthly Revenue</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Month</th>
+                <th>Revenue</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for revenue in monthly_revenue %}
+            <tr>
+                <td>{{ revenue.month }}</td>
+                <td>{{ revenue.revenue }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

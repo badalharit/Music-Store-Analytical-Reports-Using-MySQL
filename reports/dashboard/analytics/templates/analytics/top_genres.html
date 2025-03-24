@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Top Genres</title>
+</head>
+<body>
+    <h1>Top Genres</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Genre Name</th>
+                <th>Total Sales</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for genre in top_genres %}
+            <tr>
+                <td>{{ genre.genre_name }}</td>
+                <td>{{ genre.total_purchases }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

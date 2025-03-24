@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Lifetime Value</title>
+</head>
+<body>
+    <h1>Customer Lifetime Value</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Customer Name</th>
+                <th>Lifetime Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for customer in customer_lifetime_values %}
+            <tr>
+                <td>{{ customer.customer_name }}</td>
+                <td>{{ customer.lifetime_value }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
