@@ -8,15 +8,19 @@
     <table>
         <thead>
             <tr>
+                <th>Genre Id</th>
                 <th>Genre Name</th>
                 <th>Total Sales</th>
+                <th>Total Revenue</th>
             </tr>
         </thead>
         <tbody>
             {% for genre in top_genres %}
             <tr>
+                <td>{{genre.genre_id}}</td>
                 <td>{{ genre.genre_name }}</td>
                 <td>{{ genre.total_purchases }}</td>
+                <td>{{genre.total_revenue}}</td>
             </tr>
             {% endfor %}
         </tbody>

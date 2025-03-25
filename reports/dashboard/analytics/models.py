@@ -1,8 +1,10 @@
 from django.db import models
 
 class TopGenres(models.Model):
+    genre_id = models.DecimalField(max_digits=10,decimal_places=2)
     genre_name = models.CharField(max_length=255)
     total_purchases = models.DecimalField(max_digits=10, decimal_places=2)
+    total_revenue = models.DecimalField(max_digits=10,decimal_places=2)
 
     class Meta:
         managed = False
