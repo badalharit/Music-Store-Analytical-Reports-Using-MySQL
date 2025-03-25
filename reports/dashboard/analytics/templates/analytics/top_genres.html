@@ -1,9 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Top Genres</title>
+    <title>Music Store Analytics - Top Genres</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">    
+    <script src="/static/js/script.js"></script>
 </head>
 <body>
+    <div class="navbar">
+        <h1>🎵 Music Store Analytics</h1>
+        <div>
+            <a href="/">Home</a>
+            <a href="/analytics/top-genres/">Top Genres</a>
+            <a href="/analytics/monthly-revenue/">Revenue</a>
+            <a href="/analytics/customer-ltv/">Customer LTV</a>
+        </div>
+    </div>
     <h1>Top Genres</h1>
     <table>
         <thead>
@@ -25,5 +39,8 @@
             {% endfor %}
         </tbody>
     </table>
+    <div class="footer">
+        <p>&copy; 2025 Music Analytics Dashboard | Powered by Django</p>
+    </div>
 </body>
 </html>
