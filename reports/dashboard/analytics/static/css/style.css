@@ -1,62 +1,75 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    text-align: center;
-    background: #f4f4f4;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
-
-/* Header */
-header {
-    background: #333;
-    color: white;
-    padding: 1em;
+body {
+    background-color: #f4f4f4;
+    color: #333;
 }
-
-header nav a {
-    color: white;
-    margin: 0 15px;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: #222;
+    color: #fff;
+}
+.navbar h1 {
+    font-size: 22px;
+}
+.navbar a {
+    color: #fff;
+    margin-left: 20px;
     text-decoration: none;
-    font-size: 1.2em;
+    font-weight: 500;
 }
-
-/* Hero Section */
 .hero {
-    background: url('/static/images/music-bg.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(to right, #4b79a1, #283e51);
     color: white;
-    padding: 100px 20px;
 }
-
+.hero h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+.hero p {
+    font-size: 18px;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
 .hero button {
-    padding: 10px 20px;
-    font-size: 1.2em;
-    border: none;
-    cursor: pointer;
     background: #ff5733;
     color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
 }
-
-/* Features */
-.features {
+.cards {
     display: flex;
     justify-content: center;
-    padding: 50px;
+    gap: 20px;
+    padding: 40px;
 }
-
-.feature-card {
+.card {
     background: white;
     padding: 20px;
-    margin: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 250px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
-
-/* Footer */
-footer {
-    background: #333;
+.card h3 {
+    margin-top: 10px;
+}
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
     color: white;
-    padding: 10px;
-    position: absolute;
-    width: 100%;
+    margin-top: 30px;
 }

@@ -3,48 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Analytics Dashboard</title>
-    <link rel="stylesheet" href="/static/css/style.css">
-    <script defer src="/static/js/script.js"></script>
+    <title>Music Store Analytics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">    
+    <script src="/static/js/script.js"></script>
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
+    <div class="navbar">
         <h1>🎵 Music Store Analytics</h1>
-        <nav>
+        <div>
             <a href="/">Home</a>
             <a href="/analytics/top-genres/">Top Genres</a>
             <a href="/analytics/monthly-revenue/">Revenue</a>
             <a href="/analytics/customer-ltv/">Customer LTV</a>
-        </nav>
-    </header>
+        </div>
+    </div>
 
-    <!-- Hero Section -->
-    <section class="hero">
+    <div class="hero">
         <h2>Unlock Insights from Your Music Store</h2>
         <p>Analyze top-selling genres, revenue trends, and customer lifetime value.</p>
         <button onclick="enterDashboard()">Explore Dashboard</button>
-    </section>
+    </div>
 
-    <!-- Features Section -->
-    <section class="features">
-        <div class="feature-card">
+    <div class="cards">
+        <div class="card">
             <h3>📊 Data-Driven Insights</h3>
             <p>Track sales, revenue, and customer trends.</p>
         </div>
-        <div class="feature-card">
-            <h3>📈 Top-Selling Genres</h3>
+        <div class="card">
+            <h3>🎵 Top-Selling Genres</h3>
             <p>Find out which music genres are performing best.</p>
         </div>
-        <div class="feature-card">
+        <div class="card">
             <h3>💰 Revenue Breakdown</h3>
             <p>Monitor monthly revenue and growth trends.</p>
         </div>
-    </section>
+    </div>
 
-    <!-- Footer -->
-    <footer>
+    <div class="footer">
         <p>&copy; 2025 Music Analytics Dashboard | Powered by Django</p>
-    </footer>
+    </div>
 </body>
 </html>
