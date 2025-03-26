@@ -9,39 +9,34 @@
     <script src="/static/js/script.js"></script>
 </head>
 <body>
-    <div class="navbar">
-        <h1>🎵 Music Store Analytics</h1>
-        <div>
-            <a href="/">Home</a>
-            <a href="/analytics/top-genres/">Top Genres</a>
-            <a href="/analytics/monthly-revenue/">Revenue</a>
-            <a href="/analytics/customer-ltv/">Customer LTV</a>
+
+    {% include "includes/header.html" %}
+
+    <!-- Main content wrapper to push footer down -->
+    <div class="content">
+        <div class="hero">
+            <h2>Unlock Insights from Your Music Store</h2>
+            <p>Analyze top-selling genres, revenue trends, and customer lifetime value.</p>
+            <button onclick="enterDashboard()">Explore Dashboard</button>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <h3>📊 Data-Driven Insights</h3>
+                <p>Track sales, revenue, and customer trends.</p>
+            </div>
+            <div class="card">
+                <h3>🎵 Top-Selling Genres</h3>
+                <p>Find out which music genres are performing best.</p>
+            </div>
+            <div class="card">
+                <h3>💰 Revenue Breakdown</h3>
+                <p>Monitor monthly revenue and growth trends.</p>
+            </div>
         </div>
     </div>
 
-    <div class="hero">
-        <h2>Unlock Insights from Your Music Store</h2>
-        <p>Analyze top-selling genres, revenue trends, and customer lifetime value.</p>
-        <button onclick="enterDashboard()">Explore Dashboard</button>
-    </div>
-
-    <div class="cards">
-        <div class="card">
-            <h3>📊 Data-Driven Insights</h3>
-            <p>Track sales, revenue, and customer trends.</p>
-        </div>
-        <div class="card">
-            <h3>🎵 Top-Selling Genres</h3>
-            <p>Find out which music genres are performing best.</p>
-        </div>
-        <div class="card">
-            <h3>💰 Revenue Breakdown</h3>
-            <p>Monitor monthly revenue and growth trends.</p>
-        </div>
-    </div>
-
-    <div class="footer">
-        <p>&copy; 2025 Music Analytics Dashboard | Powered by Django</p>
-    </div>
+    <!-- Sticky Footer -->
+    {% include "includes/footer.html" %}
 </body>
 </html>

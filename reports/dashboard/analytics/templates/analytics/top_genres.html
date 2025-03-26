@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Music Store Analytics - Top Genres</title>
     <meta charset="UTF-8">
@@ -9,38 +9,38 @@
     <script src="/static/js/script.js"></script>
 </head>
 <body>
-    <div class="navbar">
-        <h1>🎵 Music Store Analytics</h1>
-        <div>
-            <a href="/">Home</a>
-            <a href="/analytics/top-genres/">Top Genres</a>
-            <a href="/analytics/monthly-revenue/">Revenue</a>
-            <a href="/analytics/customer-ltv/">Customer LTV</a>
+    
+    {% include "includes/header.html" %}
+
+    <!-- Main content wrapper to ensure footer stays at the bottom -->
+    <div class="content">
+        <h1 class="page-title">Top Genres</h1>
+        
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Genre Id</th>
+                        <th>Genre Name</th>
+                        <th>Total Sales</th>
+                        <th>Total Revenue</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for genre in top_genres %}
+                    <tr>
+                        <td>{{ genre.genre_id }}</td>
+                        <td>{{ genre.genre_name }}</td>
+                        <td>{{ genre.total_purchases }}</td>
+                        <td>{{ genre.total_revenue }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
         </div>
     </div>
-    <h1>Top Genres</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>Genre Id</th>
-                <th>Genre Name</th>
-                <th>Total Sales</th>
-                <th>Total Revenue</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for genre in top_genres %}
-            <tr>
-                <td>{{genre.genre_id}}</td>
-                <td>{{ genre.genre_name }}</td>
-                <td>{{ genre.total_purchases }}</td>
-                <td>{{genre.total_revenue}}</td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
-    <div class="footer">
-        <p>&copy; 2025 Music Analytics Dashboard | Powered by Django</p>
-    </div>
+
+    <!-- Sticky Footer -->
+    {% include "includes/footer.html" %}
 </body>
 </html>
