@@ -15,3 +15,6 @@ def customer_lifetime_value_view(request):
 
 def landing_page(request):
     return render(request, "landing.html")
+
+def dashboard_page(request):
+    return render(request,"dashboard.html")
