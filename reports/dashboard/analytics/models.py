@@ -12,8 +12,8 @@ class TopGenres(models.Model):
 
 class MonthlyRevenue(models.Model):
     month = models.CharField(max_length=50)
-    revenue = models.DecimalField(max_digits=10, decimal_places=2)
-
+    total_revenue = models.DecimalField(max_digits=10, decimal_places=2)
+    total_sales = models.DecimalField(max_digits=10,decimal_places=2)
     class Meta:
         managed = False
         db_table = 'vw_monthly_revenue'
